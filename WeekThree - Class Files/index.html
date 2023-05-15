@@ -35,8 +35,8 @@
 
     <form>
       <h3>Custom Pizza Maker</h3>
-      <input type="text" class="form-control" placeholder="Name Your Pizza">
-      <select class="form-control">
+      <input type="text" class="form-control" placeholder="Name Your Pizza" id="pizzaName">
+      <select class="form-control" id="size">
         <option>Choose a Size</option>
         <option>Small</option>
         <option>Medium</option>
@@ -61,8 +61,13 @@
             </label>
           </div>
 
-        
-
+          <div class="base-check">
+            <input class="form-check-input" type="radio" name="baseRadio" id="thin" value="thin">
+            <label class="form-check-label" for="thin">
+              Thin Base
+            </label>
+          </div>
+  
         </div>
 
         <div class="toppings">
@@ -110,7 +115,26 @@
             </label>
           </div>
 
-          
+          <div class="top-check">
+            <input class="form-check-input" name="toppings" type="checkbox" value="tomatoes" id="tomatoes">
+            <label class="form-check-label" for="tomatoes">
+              Tomatoes
+            </label>
+          </div>
+
+          <div class="top-check">
+            <input class="form-check-input" name="toppings" type="checkbox" value="extra cheese" id="extra_cheese">
+            <label class="form-check-label" for="extra_cheese">
+              Extra cheese
+            </label>
+          </div>
+
+          <div class="top-check">
+            <input class="form-check-input" name="toppings" type="checkbox" value="chilies" id="chilies">
+            <label class="form-check-label" for="chilies">
+              Chilies
+            </label>
+          </div>
 
           </div>
 
