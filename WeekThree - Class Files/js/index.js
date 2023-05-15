@@ -21,8 +21,33 @@ addStudent = () => {
     console.log(first, last, age, subject);
     
     if(age >= 18){
-        alert("Student: " + first + " " + last + "is accepted to " + subject)
+        alert("Student: " + first + " " + last + "is accepted to " + subject);
     } else{
-        alert("Student: " + first + " " + last + "is too young to enroll")
+        alert("Student: " + first + " " + last + "is too young to enroll");
+    }
+}
+
+makePizza = () => {
+    let pizzaName = document.getElementById().value
+    let size = document.getElementById().value
+
+    let baseOptions = document.getElementsByName("baseRadio");
+    console.log(baseOptions)
+
+    let baseValue;
+
+    for(let i = 0; i < baseOptions.length; i++){
+        if(baseOptions[i].checked){
+            basevalue = baseOptions[i].value
+        }
+    }
+    console.log(baseValue);
+
+    let salami = document.getElementById("salami").checked;
+
+    if(salami){
+        alert("Pizza Order: The " + pizzaName + " - Size "  + size + " - Base " + baseValue + " with Salami")
+    } else {
+        alert("Pizza Order: The " + pizzaName + " - Size "  + size + " - Base " + baseValue + " without Salami")
     }
 }
