@@ -20,17 +20,17 @@
   <body>
     <form>
         <h3>Student Registration</h3>
-        <input type="text" class="form-control" placeholder="First Name" >
-        <input type="text" class="form-control" placeholder="Last Name" >
-        <input type="number" class="form-control" placeholder="Age" >
-        <select class="form-control">
+        <input type="text" class="form-control" placeholder="First Name" id="first">
+        <input type="text" class="form-control" placeholder="Last Name" id="last">
+        <input type="number" class="form-control" placeholder="Age" id="age">
+        <select class="form-control" id="subject">
           <option>Select Your Subject</option>
           <option>Development</option>
           <option>UX Design</option>
           <option>Product Design</option>
         </select>
 
-        <button class="btn btn-primary" type="button" >Add Student</button>    
+        <button class="btn btn-primary" type="button" onclick="addStudent();">Add Student</button>    
       </form>
 
     <form>
